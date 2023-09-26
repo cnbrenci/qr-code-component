@@ -1,79 +1,79 @@
 :root {
-    --dark-navy: #1f314f;
-    --grey: #7d889e;
-    --light-grey: #d5e1ef;
-    --white: white;
-    font-family: 'Outfit', sans-serif;
+  --dark-navy: #1f314f;
+  --grey: #7d889e;
+  --light-grey: #d5e1ef;
+  --white: white;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
-    background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
-section.grid {
-    display: grid;
-    grid-template: 1fr 497px 1fr / 1fr 320px 1fr;
-    height: 100vh;
+main.grid {
+  display: grid;
+  grid-template: 1fr 497px 1fr / 1fr 320px 1fr;
+  height: 100vh;
 }
 
 figure.card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    border-radius: 20px;
-    margin: 0;
-    padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  border-radius: 20px;
+  margin: 0;
+  padding: 16px;
 }
 
 figure.card > figcaption {
-    text-align: center;
+  text-align: center;
 }
 
-figure.card > figcaption > h2 {
-    color: var(--dark-navy);
-    margin-top: 24px;
-    margin-bottom: 0px;
-    font-size: 1.375rem;
+figure.card > figcaption > h1 {
+  color: var(--dark-navy);
+  margin-top: 24px;
+  margin-bottom: 0px;
+  font-size: 1.375rem;
 }
 
 figure.card > figcaption > p {
-    color: var(--grey);
-    font-size: .9375rem;
-    width: 256px;
-    margin-left: auto;
-    margin-right: auto;
+  color: var(--grey);
+  font-size: 0.9375rem;
+  width: 256px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.qr-code {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
-.attribution { 
-    font-size: 11px;
-    text-align: center;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* An alternate way to style the grid so that the content
 shows up in the same position, but using a 1x1 grid instead. */
 .grid-alt {
-    display: grid;
-    grid-template: 100vh / 100vw;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  display: grid;
+  grid-template: 100vh / 100vw;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .card-alt {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    height: 497px;
-    width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 497px;
+  width: 320px;
 }
